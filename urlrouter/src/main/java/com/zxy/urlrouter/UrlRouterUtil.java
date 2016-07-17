@@ -72,9 +72,8 @@ public class UrlRouterUtil {
             if (activityName.startsWith(appPackageName)) {
                 return resolveInfo;
             }
-            return resolveInfo;
         }
-        return null;
+        return resolveInfoList.get(0);
     }
 
     public static String getScheme(Uri uri) {
